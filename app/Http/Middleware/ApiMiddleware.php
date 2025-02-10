@@ -17,7 +17,6 @@ class ApiMiddleware
      */
     public function handle(Request $request, Closure $next): Response
     {
-        Auth::login(User::query()->first());
         $request->headers->set('Accept', 'application/json');
 
         return $next($request);
