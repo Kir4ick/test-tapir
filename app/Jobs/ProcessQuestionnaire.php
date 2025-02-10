@@ -21,7 +21,7 @@ class ProcessQuestionnaire implements ShouldQueue
 
     public int $tries = 10;
 
-    public int $backoff = 1;
+    public int $backoff = 30;
 
     /**
      * Create a new job instance.
